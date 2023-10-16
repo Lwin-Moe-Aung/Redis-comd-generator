@@ -1,0 +1,24 @@
+HSET room:123:info:map "\"name\"" "\"Vb NnV003、nvg、cs004\"" "\"showNewMemberMessage\"" "false" "\"userSize\"" "3" "\"talk\"" "true"
+HSET room:6320382827ee563588eed1e7:info:map "\"name\"" "\"Kenneth、Dorothy、Elizabeth、Barbara\"" "\"showNewMemberMessage\"" "false" "\"userSize\"" "4" "\"talk\"" "true"
+
+
+HSET room:6475acbecb32e2015c23bddb:members:100148:map "\"nickname\"" "\"Vb NnV003、nvg、cs004\"" "\"vip\"" "0" "\"role\"" "3" "\"noPush\"" "true" "\"talkTime\"" "\"0\""
+
+
+
+Redis Cli Commands
+
+
+docker exec -i redis-old redis-cli -h localhost -p 6379 -a eliao@123. -n 1 < users.redis
+
+redis-cli -h localhost -p 6379 -a eliao@123. -n 1
+
+redis-cli
+
+127.0.0.1:6379> AUTH your_password
+
+Select Db
+127.0.0.1:6379> SELECT 2
+
+
+HSET myhash "\"name\"" "\"aung aung\"" "\"age\"" "30"
