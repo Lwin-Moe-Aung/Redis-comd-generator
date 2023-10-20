@@ -31,20 +31,4 @@ roomRoutes.get('/room/addroominfo', (req, res) => {
     res.send({success: true, msg: 'Room info data added successfully'})
 })
 
-
-// util functions 
-
-const saveAccountData = (data) => {
-    
-    fs.writeFileSync(dataPath, stringifyData)
-}
-
-const getAccountData = () => {
-    const jsonData = fs.readFileSync(dataPath)
-    return JSON.parse(jsonData)    
-}
-
-
-
-
 module.exports = roomRoutes

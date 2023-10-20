@@ -1,11 +1,18 @@
 const express = require("express")
 const router = express.Router();
 const fs = require('fs');
-const accountRoutes = require('./account.js')
 const roomRoutes = require('./room.js')
 
+const roomMemberRoutes = require('./roomMember.js')
+const memberAllListRoutes = require('./memberAllList.js')
+const memberListRoutes = require('./memberList.js')
 
-router.use(accountRoutes)
+
 // Redis
 router.use(roomRoutes)
+router.use(roomMemberRoutes)
+router.use(memberAllListRoutes)
+router.use(memberListRoutes)
+
+
 module.exports = router;
